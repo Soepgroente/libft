@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vvan-der <vvan-der@student.42.fr>          +#+  +:+       +#+        */
+/*   By: vincent <vincent@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 18:23:48 by vvan-der          #+#    #+#             */
-/*   Updated: 2023/03/10 15:34:40 by vvan-der         ###   ########.fr       */
+/*   Updated: 2023/07/22 14:23:30 by vincent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return ((void *)&str[i]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
