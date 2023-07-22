@@ -6,7 +6,7 @@
 #    By: vincent <vincent@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/03 18:04:48 by vvan-der          #+#    #+#              #
-#    Updated: 2023/07/22 15:17:10 by vincent          ###   ########.fr        #
+#    Updated: 2023/07/22 15:24:46 by vincent          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ OBJS	= $(SRCS:%.c=$(OBJDIR)/%.o)
 all:	$(NAME)
 
 $(PRINTF):
-	git submodule init git@github.com:Soepgroente/ft_printf.git
+	git submodule init
 
 $(PRINT_A): $(PRINTF)
 	$(MAKE) -C $(PRINTF)
