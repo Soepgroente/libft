@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vvan-der <vvan-der@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 16:30:23 by vvan-der          #+#    #+#             */
-/*   Updated: 2023/06/30 11:06:16 by vvan-der         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   libft.h                                            :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: vvan-der <vvan-der@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2022/10/11 16:30:23 by vvan-der      #+#    #+#                 */
+/*   Updated: 2023/07/28 12:47:37 by vvan-der      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <limits.h>
+# include <stdarg.h>
 
 # ifndef S_LIST
 #  define S_LIST
@@ -38,7 +39,7 @@ int			ft_isascii(int c);
 int			ft_isdigit(int c);
 int			ft_isprint(int c);
 int			ft_iswhitespace(int c);
-void		ft_putchar_fd(char c, int fd);
+int			ft_putchar_fd(char c, int fd);
 void		ft_putendl_fd(char *c, int fd);
 void		ft_putnbr_fd(int c, int fd);
 void		ft_putstr_fd(char *c, int fd);
@@ -62,6 +63,8 @@ int			ft_atoi(const char *str);
 char		*ft_itoa(int n);
 long double	ft_pow_fl(long double number, int power);
 long long	ft_pow(int number, int power);
+int			ft_writoa(int n);
+int			ft_lutoa(size_t args, int base, int b);
 
 /* List functions */
 
@@ -73,8 +76,8 @@ void		ft_lstiter(t_list *lst, void (*f)(void *));
 t_list		*ft_lstlast(t_list *lst);
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list		*ft_lstnew(void *content);
-t_list		*ft_lstnew_ps(void *content);
 int			ft_lstsize(t_list *lst);
+int			ft_printf(const char *input, ...);
 
 /* String functions */
 
@@ -94,5 +97,6 @@ char		*ft_strrchr(const char *s, int c);
 char		*ft_strtrim(const char *s1, const char *set);
 char		*ft_substr(const char *s, unsigned int start, size_t len);
 char		*ft_tolower_str(char *str);
+int			ft_putstrlen_fd(char *s, int fd);
 
 #endif
