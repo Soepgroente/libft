@@ -6,7 +6,7 @@
 /*   By: vvan-der <vvan-der@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/11 16:30:23 by vvan-der      #+#    #+#                 */
-/*   Updated: 2023/07/28 12:47:37 by vvan-der      ########   odam.nl         */
+/*   Updated: 2023/08/07 11:23:47 by vvan-der      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ int			ft_toupper(int c);
 
 void		ft_bzero(void *str, size_t n);
 void		*ft_calloc(size_t count, size_t size);
+char		*ft_realloc(char *str, size_t size);
 void		*ft_memchr(const void *s, int c, size_t n);
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
 void		*ft_memcpy(void *dst, const void *src, size_t n);
